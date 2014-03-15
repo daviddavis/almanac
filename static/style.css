@@ -1,0 +1,105 @@
+body {
+  text-align: center;
+  font-family: Arvo, "Time New Roman", Serif;
+  padding-top: 70px;
+}
+p {
+  font-size: 12pt;
+}
+.tiny {
+  font-size: 8pt;
+  font-family: Arial, "Sans-Serif";
+}
+h1.title {
+  font-size: 22pt;
+  font-family: Arvo, Serif;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+h1.title em {
+  font-weight: 600;
+}
+p.cd-container {
+  font-size: 20pt;
+  margin: 13px auto;
+  float: none;
+}
+.description {
+  float: left;
+  border: 1px solid #aaa;
+  background: #eee;
+  padding: 16px 26px 8px;
+  text-align: justify;
+  width: 585px;
+  margin-left: 20px;
+}
+.description p {
+  font-size: 12pt;
+  font-family: Georgia, "Time New Roman", Serif;
+}
+section.links p {
+  margin-top: 1em;
+}
+section.main {
+  margin: 20px auto 0;
+  width: 880px;
+  display: block;
+}
+.cover-image {
+  float: left;
+  margin: 20px 20px 20px 0px;
+}
+.clear {
+  clear: both;
+}
+
+/* navbar */
+@media (min-width: 1200px) {
+  .container {
+    width: 910px;
+  }
+}
+
+@media (min-width: 768px) {
+  #tor a {
+    padding: 0;
+    margin-top: 2px;
+    width: 33px;
+    height: 44px;
+    background: url(/static/tor_dark.png);
+  }
+  #tor a:hover {
+    background: url(/static/tor.png);
+  }
+}
+/* end navbar */
+
+.blurb {
+  margin: 1em auto;
+  width: 900px;
+}
+.blurb .quote span:before {
+  content: "\201C";
+}
+.blurb .quote span:after {
+  content: "\201D";
+}
+.blurb .quote span {
+  font-size: 1.3em;
+}
+.blurb .quote a:before {
+  content: "\2014";
+}
+.blurb .quote a {
+  color: #333;
+}
+.blurb .quote a:hover {
+  color: #428bca;
+}
+
+.twitter {
+  margin-top: 1em;
+}
+.fa-twitter {
+  font-size: 1.2em;
+}

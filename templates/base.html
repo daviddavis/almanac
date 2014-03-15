@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>The Time Traveler's Almanac by Ann and Jeff VanderMeer</title>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <link href='//fonts.googleapis.com/css?family=Arvo|Merriweather' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+  <!-- fancybox files -->
+  <link rel="stylesheet" href="/static/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="/static/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <script type="text/javascript" src="/static/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+  <script src="{{ url_for('static', filename='countdown.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='application.js') }}"></script>
+</head>
+<body>
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">The Time Traveler's Almanac</a>
+        <ul class="nav navbar-nav">
+          <li><a href="https://www.youtube.com/watch?v=eW3ztikOib4" class="fancybox">Trailer</a></li>
+          <li><a href="http://amzn.com/0765374242" target="_blank">Purchase</a></li>
+          <li><a href="https://www.goodreads.com/book/show/17910155-the-time-traveler-s-almanac" target="_blank">Goodreads</a></li>
+        </ul>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li id="tor"><a href="http://tor.com"></a></li>
+      </ul>
+    </div>
+  </div>
+
+  {% block content %}{% endblock %}
+  <p class="tiny" style="margin-top: 2em">
+    This is a fan site and is not associated with <em>The Time Traveler's Almanac</em>,
+    Tor Books, or Ann and Jeff VanderMeer.
+  </p>
+</body>
+</html>

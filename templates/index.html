@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <h1 class="title">
+    <em>The Time Traveler's Almanac</em> by Ann and Jeff VanderMeer
+  </h1>
+
+
+  <section class="main">
+    <div class="cover-image">
+      <img src="{{ url_for('static', filename='tta.jpg') }}" alt="cover" />
+    </div>
+
+    <div class="description">
+      <p>
+        <em>The Time Traveler's Almanac</em> is the largest and most definitive collection
+        of time travel stories ever assembled. Gathered into one volume by
+        intrepid chrononauts and world-renowned anthologists Ann and Jeff
+        VanderMeer, this book compiles more than a century's worth of literary
+        travels into the past and the future that will serve to reacquaint
+        readers with beloved classics of the time travel genre and introduce them
+        to thrilling contemporary innovations.
+      </p>
+      <p>
+        This marvelous volume includes nearly seventy journeys through time
+        from authors such as Douglas Adams, Isaac Asimov, Ray Bradbury, William
+        Gibson, Ursula K. Le Guin, George R. R. Martin, Michael Moorcock, H. G.
+        Wells, and Connie Willis, as well as helpful non-fiction articles
+        original to this volume (such as Charles Yu's "Top Ten Tips For Time
+        Travelers").
+      </p>
+      <p>
+        In fact, this book is like a time machine of its very own, covering
+        millions of years of Earth's history from the age of the dinosaurs
+        through to strange and fascinating futures, spanning the ages from the
+        beginning of time to its very end. <em>The Time Traveler's Almanac</em>
+        is the ultimate anthology for the time traveler in <em>your</em> life.
+      </p>
+    </div>
+    <div class="clear" />
+  </section>
+
+  <p class='cd-container'>
+    Coming in <span class="countdown"></span>.
+  </p>
+
+  <section class="blurb">
+    <p class="quote">
+      <span>This is the perfect gift for fantasy fans.</span>
+      <a href="http://www.fantasybookreview.co.uk/Ann-and-Jeff-VanderMeer/The-Time-Travelers-Almanac.html" target="_blank">Fantasy Book Review</a>
+    </p>
+    <p class="quote">
+      <span>Completely satisfying; the almanac will appeal on some level to
+      every science fiction reader.</span>
+      <a href="http://edwardsvillelibrary.blogspot.com/2014/03/staff-book-review-time-travelers.html" target="_blank">Edwardsville Public Library</a>
+    </p>
+  </section>
+
+  <section class="links">
+    <p>
+      See the <a href="https://www.youtube.com/watch?v=eW3ztikOib4" class="fancybox">the trailer</a>.
+    </p>
+    <p>
+      Buy it at <a href="http://amzn.com/0765374242" target="_blank">Amazon.com</a>.
+    </p>
+  </section>
+
+  <p class="twitter">
+    <i class="fa fa-twitter"></i>
+    Follow <a href="http://twitter.com/AnnVanderMeer" target="_blank">@AnnVanderMeer</a>
+    and <a href="http://twitter.com/jeffvandermeer" target="_blank">@jeffvandermeer</a>.
+  </p>
+
+{% endblock %}
