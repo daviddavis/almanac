@@ -6,7 +6,7 @@ $().ready(function() {
             $(".countdown").text(ts.toString());
         }, release);
     } else {
-        $(".cd-container").remove();
+        $(".cd-container").text("Available in Stores Now!");
     }
 
     $('.fancybox').fancybox({helpers: {media: {}}});
