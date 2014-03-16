@@ -19,6 +19,13 @@ h1.title {
 h1.title em {
   font-weight: 600;
 }
+section.footer {
+  border-top: 1px solid #eee;
+  margin-top: 2.5em;
+}
+.main {
+  min-height: 700px;
+}
 p.cd-container {
   font-size: 20pt;
   margin: 13px auto;
@@ -40,7 +47,7 @@ p.cd-container {
 section.links p {
   margin-top: 1em;
 }
-section.main {
+section.content {
   margin: 20px auto 0;
   width: 880px;
   display: block;
@@ -102,4 +109,34 @@ section.main {
 }
 .fa-twitter {
   font-size: 1.2em;
+}
+
+.authors {
+  margin: -20px auto 0;
+  width: 900px;
+  font-family: Georgia, Serif;
+  font-size: 24pt;
+  text-align: justify;
+}
+.authors h3 {
+  font-family: Merriweather, Serif;
+}
+.authors .author {
+  margin-top: 1.7em;
+}
+.authors .author h3 {
+  font-weight: 600;
+}
+.authors .author img {
+  float: left;
+  height: 100px;
+  margin: 0 20px 20px 0;
+}
+.author .links {
+  border-top: 1px solid #eee;
+  padding-top: 0.5em;
+}
+.author .links a {
+  margin-right: 20px;
+  font-size: .9em;
 }

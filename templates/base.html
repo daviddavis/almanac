@@ -21,9 +21,10 @@
   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">The Time Traveler's Almanac</a>
+        <a class="navbar-brand" href="/">The Time Traveler's Almanac</a>
         <ul class="nav navbar-nav">
           <li><a href="https://www.youtube.com/watch?v=eW3ztikOib4" class="fancybox">Trailer</a></li>
+          <li><a href="authors">Authors</a></li>
           <li><a href="http://amzn.com/0765374242">Purchase</a></li>
           <li><a href="https://www.goodreads.com/book/show/17910155-the-time-traveler-s-almanac">Goodreads</a></li>
         </ul>
@@ -34,10 +35,15 @@
     </div>
   </div>
 
-  {% block content %}{% endblock %}
-  <p class="tiny" style="margin-top: 2em">
-    This is a fan site and is not associated with <em>The Time Traveler's Almanac</em>,
-    Tor Books, or Ann and Jeff VanderMeer.
-  </p>
+  <div class="main">
+    {% block content %}{% endblock %}
+  </div>
+
+  <section class="footer">
+    <p class="tiny" style="margin-top: 2em">
+      This is a fan site and is not associated with <em>The Time Traveler's Almanac</em>,
+      Tor Books, or Ann and Jeff VanderMeer.
+    </p>
+  </section>
 </body>
 </html>
