@@ -22,9 +22,21 @@ h1.title em {
 section.footer {
   border-top: 1px solid #eee;
   margin-top: 2.5em;
+  padding-top: 1.5em;
+}
+section.footer p {
+  font-family: Arial, "Sans-serif";
+  font-size: 9pt;
+}
+section.footer .fa {
+  font-size: 14pt;
+  margin-right: .1em;
+}
+section.footer p a {
+  color: #333;
 }
 .main {
-  min-height: 700px;
+  min-height: 800px;
 }
 p.cd-container {
   font-size: 20pt;
