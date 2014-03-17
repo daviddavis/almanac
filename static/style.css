@@ -97,10 +97,10 @@ section.content {
   margin: 1em auto;
   width: 900px;
 }
-.blurb .quote span:before {
+.blurb .quote span:before, .contents ol li span:before {
   content: "\201C";
 }
-.blurb .quote span:after {
+.blurb .quote span:after, .contents ol li span:after {
   content: "\201D";
 }
 .blurb .quote span {
@@ -151,4 +151,31 @@ section.content {
 .author .links a {
   margin-right: 20px;
   font-size: .9em;
+}
+
+.disclaimer {
+  width: 600px;
+  margin: 0 auto;
+}
+.disclaimer h1 {
+  margin-bottom: .7em;
+}
+
+.contents {
+  width: 900px;
+  margin: 0 auto;
+}
+.contents p {
+  font-family: Georgia, Serif;
+  font-size: 15pt;
+}
+.contents div ol:first {
+  margin-right: 4px;
+}
+.contents ol {
+  font-family: Georgia, Serif;
+  font-size: 12pt;
+  float: left;
+  width: 450px;
+  text-align: left;
 }

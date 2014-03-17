@@ -15,5 +15,13 @@ def index():
 def authors():
     return render_template("authors.html")
 
+@app.route("/disclaimer")
+def disclaimer():
+    return render_template("disclaimer.html")
+
+@app.route("/contents")
+def contents():
+    return render_template("contents.html")
+
 if __name__ == "__main__":
     app.run(debug = "True")
