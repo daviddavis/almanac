@@ -27,10 +27,18 @@
         <a class="navbar-brand" href="/">The Time Traveler's Almanac</a>
         <ul class="nav navbar-nav">
           <li><a href="https://www.youtube.com/watch?v=eW3ztikOib4" class="fancybox">Trailer</a></li>
-          <li><a href="contents">Contents</a></li>
-          <li><a href="authors">Editors</a></li>
-          <li><a href="http://amzn.com/0765374242">Amazon</a></li>
-          <li><a href="https://www.goodreads.com/book/show/17910155-the-time-traveler-s-almanac">Goodreads</a></li>
+          <li {% if "contents" == active_page %} class="active"{% endif %} >
+            <a href="contents">Contents</a>
+          </li>
+          <li {% if "authors" == active_page %} class="active"{% endif %} >
+            <a href="authors">Editors</a>
+          </li>
+          <li>
+            <a href="http://amzn.com/0765374242">Amazon</a>
+          </li>
+          <li>
+            <a href="https://www.goodreads.com/book/show/17910155-the-time-traveler-s-almanac">Goodreads</a>
+          </li>
         </ul>
       </div>
       <ul class="nav navbar-nav navbar-right">
