@@ -29,12 +29,15 @@
       <div class="navbar-header">
         <a class="navbar-brand" href="/">The Time Traveler's Almanac</a>
         <ul class="nav navbar-nav">
+          <li {% if "contest" == active_page %} class="active"{% endif %} >
+            <a href="/contest/rules">Contest</a>
+          </li>
           <li><a href="https://www.youtube.com/watch?v=eW3ztikOib4" class="fancybox">Trailer</a></li>
           <li {% if "contents" == active_page %} class="active"{% endif %} >
-            <a href="contents">Contents</a>
+            <a href="/contents">Contents</a>
           </li>
           <li {% if "authors" == active_page %} class="active"{% endif %} >
-            <a href="authors">Editors</a>
+            <a href="/authors">Editors</a>
           </li>
           <li>
             <a href="http://amzn.com/0765374242">Amazon</a>
@@ -50,7 +53,7 @@
     </div>
   </div>
 
-  <div class="main">
+  <div class="main {{ active_page }}">
     {% block content %}{% endblock %}
   </div>
 
@@ -59,7 +62,7 @@
       &copy; 2014 Timetravelersalmanac.com
     </p>
     <p>
-      <a href="disclaimer">Disclaimer</a>
+      <a href="/disclaimer">Disclaimer</a>
     </p>
   </section>
 </body>

@@ -5,10 +5,20 @@ body {
 }
 p {
   font-size: 12pt;
+  font-family: Georgia, "Time New Roman", Serif;
 }
 .tiny {
   font-size: 8pt;
   font-family: Arial, "Sans-Serif";
+}
+.clear {
+  clear: both;
+}
+
+
+/* index */
+.index p {
+  font-family: Arvo, Georgia, Serif;
 }
 h1.title {
   font-size: 22pt;
@@ -19,29 +29,11 @@ h1.title {
 h1.title em {
   font-weight: 600;
 }
-section.footer {
-  border-top: 1px solid #eee;
-  margin-top: 2.5em;
-  padding-top: 1.5em;
-}
-section.footer p {
-  font-family: Arial, "Sans-serif";
-  font-size: 9pt;
-}
-section.footer .fa {
-  font-size: 14pt;
-  margin-right: .1em;
-}
-section.footer p a {
-  color: #333;
-}
-.main {
-  min-height: 800px;
-}
 p.cd-container {
   font-size: 20pt;
   margin: 13px auto;
   float: none;
+  font-family: Arvo, Georgia, Serif;
 }
 .description {
   float: left;
@@ -67,8 +59,58 @@ section.content {
   float: left;
   margin: 20px 20px 20px 0px;
 }
-.clear {
-  clear: both;
+.blurb {
+  margin: 1em auto;
+  width: 900px;
+}
+.blurb .quote span:before, .contents ol li span:before {
+  content: "\201C";
+}
+.blurb .quote span:after, .contents ol li span:after {
+  content: "\201D";
+}
+.blurb .quote span {
+  font-size: 1.3em;
+}
+.blurb .quote a:before {
+  content: "\2014";
+}
+.blurb .quote a {
+  color: #333;
+}
+.blurb .quote a:hover {
+  color: #428bca;
+}
+.twitter {
+  margin-top: 1em;
+}
+.fa-twitter {
+  font-size: 1.2em;
+}
+
+
+/* base template */
+section.footer {
+  border-top: 1px solid #eee;
+  margin-top: 2.5em;
+  padding-top: 1.5em;
+}
+section.footer p {
+  font-family: Arial, "Sans-serif";
+  font-size: 9pt;
+}
+section.footer .fa {
+  font-size: 14pt;
+  margin-right: .1em;
+}
+section.footer p a {
+  color: #333;
+}
+.main {
+  min-height: 800px;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* navbar */
@@ -93,53 +135,26 @@ section.content {
 }
 /* end navbar */
 
-.blurb {
-  margin: 1em auto;
-  width: 900px;
-}
-.blurb .quote span:before, .contents ol li span:before {
-  content: "\201C";
-}
-.blurb .quote span:after, .contents ol li span:after {
-  content: "\201D";
-}
-.blurb .quote span {
-  font-size: 1.3em;
-}
-.blurb .quote a:before {
-  content: "\2014";
-}
-.blurb .quote a {
-  color: #333;
-}
-.blurb .quote a:hover {
-  color: #428bca;
-}
 
-.twitter {
-  margin-top: 1em;
-}
-.fa-twitter {
-  font-size: 1.2em;
-}
 
-.authors {
+/* authors */
+.author-list {
   margin: -20px auto 0;
   width: 900px;
   font-family: Georgia, Serif;
   font-size: 24pt;
   text-align: justify;
 }
-.authors h3 {
+.author-list h3 {
   font-family: Merriweather, Serif;
 }
-.authors .author {
+.author-list .author {
   margin-top: 1.7em;
 }
-.authors .author h3 {
+.author-list .author h3 {
   font-weight: 600;
 }
-.authors .author img {
+.author-list .author img {
   float: left;
   height: 100px;
   margin: 0 20px 20px 0;
@@ -153,6 +168,8 @@ section.content {
   font-size: .9em;
 }
 
+
+/* disclaimer */
 .disclaimer {
   width: 600px;
   margin: 0 auto;
@@ -161,9 +178,10 @@ section.content {
   margin-bottom: .7em;
 }
 
+
+/* contents page */
 .contents {
-  width: 900px;
-  margin: 0 auto;
+  margin-top: 0;
 }
 .contents p {
   font-family: Georgia, Serif;
@@ -178,4 +196,79 @@ section.content {
   float: left;
   width: 450px;
   text-align: left;
+}
+
+
+/* contest */
+.main.contest {
+  width: 100%
+}
+.contest h1 {
+  font-size: 27pt;
+  text-shadow: 0 1px 0 #fff;
+}
+.header {
+  width: 100%;
+  padding: 1.4em 0;
+  margin: -2em 0 0;
+  z-index: 5;
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.29);
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.29);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.29);
+}
+
+.intro {
+  background: #f6f6f6;
+  margin: 0;
+  padding: 2em 0 5em;
+  border-bottom: 1px solid #c4c4c4;
+}
+.intro h2 {
+  font-family: Merriweather, Georgia, Serif;
+  font-weight: 800;
+  text-shadow: 0 1px 0 #fff;
+  padding: .3em 0 .3em;
+}
+.intro-container {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.intro-text {
+  padding-left: 20px;
+}
+.intro p {
+  text-align: justify;
+  margin-left: 10px;
+}
+img.intro-image {
+  float: left;
+  margin-right: 3em;
+  width: 350px;
+}
+
+.rules {
+  width: 900px;
+  margin: 2em auto;
+}
+.rules p {
+  text-align: justify;
+  margin-top: 1.5em;
+}
+.banner {
+  margin: 1.5em 0 0;
+}
+.banner i {
+  font-size: 84pt;
+}
+.banner div.column {
+  width: 257px;
+  margin-left: 60px;
+  float: left;
+  padding: 20px 0 0;
+}
+img.cocktail {
+  height: 100px;
+  margin: 5px 0;
 }
