@@ -45,7 +45,6 @@ p.cd-container {
 }
 .description {
   float: left;
-  border: 1px solid #aaa;
   background: #eee;
   padding: 16px 26px 8px;
   text-align: justify;
