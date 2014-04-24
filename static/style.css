@@ -179,3 +179,7 @@ section.content {
   width: 450px;
   text-align: left;
 }
+
+.calendar {
+  margin-top: 3em;
+}

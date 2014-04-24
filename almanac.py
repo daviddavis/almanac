@@ -23,5 +23,9 @@ def disclaimer():
 def contents():
     return render_template("contents.html")
 
+@app.route("/events")
+def events():
+    return render_template("events.html")
+
 if __name__ == "__main__":
     app.run(debug = "True")
